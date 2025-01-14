@@ -1,14 +1,13 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import Hero from './_components/Hero'
 
 function Home() {
   return (
-    <div>Home
-      Subscribe To All
-
-      <Button>Subscribe</Button>
+    <div>
+      <Hero/>
     </div>
   )
 }
 
-export default Home
+export default Home 

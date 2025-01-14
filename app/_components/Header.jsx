@@ -1,8 +1,30 @@
+import { Button } from '@/components/ui/button'
+import { ShoppingBag } from 'lucide-react'
 import React from 'react'
 
 function Header() {
+   const menuList = [
+     { name: 'Home', path: '/' },
+     { name: 'Store', path: '/store' },
+     { name: 'Explore', path: '/explore' },
+
+   ]
   return (
-    <div>Header</div>
+    <div className='flex p-4 px-10 md:px-32 lg:px-48 border-b-2 border-color-2 justify-between items-center'>
+      <h2 className='font-bold text-lg bg-black text-white px-2 p-1'>Digital E-Commerce</h2>
+      
+
+      <ul className='flex gap-5'>
+        {menuList.map((menu, index) =>(
+          <li key={index} className='px-2 p-1 hover:border-2 cursor-pointer'>{menu?.name}</li>
+        ))}
+        
+      </ul>
+      <div className='flex gap-5 items-center'>
+        <ShoppingBag/>
+        <Button className='bg-red-400 hover:bg-red-500'>start selling</Button>
+      </div>
+    </div>
   )
 }
 
