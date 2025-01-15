@@ -10,7 +10,7 @@ function Header() {
 
    ]
   return (
-    <div className='flex p-4 px-10 md:px-32 lg:px-48 border-b-2 border-color-2 justify-between items-center'>
+    <div className='flex p-4 px-10 border-b-2 border-color-2 justify-between items-center'>
       <h2 className='font-bold text-lg bg-black text-white px-2 p-1'>Digital E-Commerce</h2>
       
 
