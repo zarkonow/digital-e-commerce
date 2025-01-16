@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { UserButton } from '@clerk/nextjs'
 import { ShoppingBag } from 'lucide-react'
 import React from 'react'
 
@@ -11,7 +12,7 @@ function Header() {
    ]
   return (
     <div className='flex p-4 px-10 border-b-2 border-color-2 justify-between items-center'>
-      <h2 className='font-bold text-lg bg-black text-white px-2 p-1'>Digital E-Commerce</h2>
+      <h2 className='font-bold text-lg bg-black text-white px-2 p-1'>DIGITAL STORE</h2>
       
 
       <ul className='flex gap-5'>
@@ -23,6 +24,7 @@ function Header() {
       <div className='flex gap-5 items-center'>
         <ShoppingBag/>
         <Button className='bg-red-400 hover:bg-red-500'>start selling</Button>
+        <UserButton />
       </div>
     </div>
   )
